@@ -12,6 +12,12 @@ Text Domain:  accelerate-theme-child
 
 /* ==========  HOMEPAGE STYLES ========== */
 
+.page-header, .site-content, #navigation, .site-footer {
+	width: 95%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
 .home-page {
 	background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
 }
@@ -24,6 +30,10 @@ Text Domain:  accelerate-theme-child
 	background: none repeat scroll 0 0 #45ac9d;
 }
 
+.button a {
+	color: #fff;
+}
+
 .blog-post {
 	width: 50%;
 	float: left;
@@ -31,20 +41,161 @@ Text Domain:  accelerate-theme-child
 }
 
 .blog-post h4 {
-	font: 700 1rem/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+	font: 600 1rem/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
 	color: #a6a6a6;
 	text-transform: uppercase;
-	margin: 1rem 0 1rem;
+	margin: 2rem 0 2rem;
 }
 
 .blog-post h3 {
 	font-size: 1.5rem;
+	color: #444;
 	margin: 0;
+}
+
+.blog-post p {
+	color: #555;
+	font-size: 1rem;
 }
 
 .read-more-link {
 	font-family: 'Montserrat';
 	font-weight: 700;
 	color: #45ac9d;
+	margin: 1rem 0;
 	text-transform: uppercase;
+}
+
+/* ===== FEATURED WORKS  ======  */
+
+
+.featured-work {
+	clear: both;
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.featured-work h4 {
+	font: 700 .9375rem/1.625 'Montserrat', sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 3rem 0;
+	color: #444;
+}
+
+.featured-work h6 {
+	font: 500 1rem/1.625 'Roboto', sans-serif;
+	letter-spacing: .6px;
+	color: #666;
+	text-align: center;
+	margin: 1rem 0;
+}
+
+.featured-work ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+}
+
+.featured-work li {
+	float: left;
+}
+
+/* ===== SINGLE CASE STUDY ======  */
+
+.case-study {
+	clear: both;
+	align-content: center;
+}
+
+.case-study-sidebar {
+	width: 35%;
+	padding-top: 6rem;
+	float: left;
+	margin: 0;
+}
+
+.case-study-images {
+	width: 60%;
+	margin-top: 3rem;
+	float: right;
+	display: block;
+}
+
+.case-study-images img {
+	padding: 1.5rem 0;
+	width: 100%;
+	height: auto;
+	
+}
+
+.case-study-sidebar h2 {
+	color: #444;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 1.5625rem;
+	line-height: 1.1;
+	margin: 0 auto;
+}
+
+.case-study-sidebar a {
+	color: #444;
+}
+.case-study-sidebar h4 span {
+	color: #878787;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+	font-size: .875rem;
+	margin: 1rem 0;
+}
+
+.case-study-sidebar h4 {
+	color: #444;
+	font-size: .9125rem;
+	font-weight: 500;
+	margin: 1rem 0;
+}
+
+.case-study-sidebar p {
+	padding-top: 1rem;
+	font-size: .9125rem;
+	color: #444;
+}
+
+.case-study-sidebar a {
+	color: #45ac9d;
+	letter-spacing: 1.2;
+}	
+
+/* ===== ARCHIVE CASE STUDIES  ===== */
+
+h2.archive-title {
+	color: #444;
+}
+
+a.archive-title {
+	color: #444;
+}
+
+/* ===== SOCIAL MEDIA MENU  ===== */
+
+.site-footer a {
+	color: #0000f0;
+	font-size: 1.5rem;
+}
+
+.screen-reader-text {
+	border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
 }
