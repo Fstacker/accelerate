@@ -187,7 +187,12 @@ a.archive-title {
 	font-size: 1.5rem;
 }
 
-.screen-reader-text {
+.socmed-icons a[href*="twitter.com"] {
+	background-image: url('../img/twitter-2-icon.png');
+	background-repeat: no-repeat;
+}
+/* makes text for disappear so that the text can be replaced w/ social media icons */
+/*.screen-reader-text {
 	border: 0;
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
@@ -198,4 +203,12 @@ a.archive-title {
   position: absolute !important;
   width: 1px;
   word-wrap: normal !important;
-}
+}*/
+
+/*li.socmed-icons {
+	background-image: url('../img/twitter-2-icon.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left: 1/3rem;
+}*/
+
