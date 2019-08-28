@@ -182,14 +182,28 @@ a.archive-title {
 
 /* ===== SOCIAL MEDIA MENU  ===== */
 
-.site-footer a {
-	color: #0000f0;
-	font-size: 1.5rem;
+/*.menu-social-media-nav-container {
+	display: inline-flex;
+	justify-content: space-between;
+}*/
+
+.social-media-navigation {
+	width: 30%;
 }
 
-.socmed-icons a[href*="twitter.com"] {
-	background-image: url('../img/twitter-2-icon.png');
-	background-repeat: no-repeat;
+ul {
+	list-style: none;
+	float: right;
+}
+
+li {
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+img._mi._image {
+	width: 3rem;
+	height: 3rem;
 }
 /* makes text for disappear so that the text can be replaced w/ social media icons */
 /*.screen-reader-text {
@@ -205,10 +219,4 @@ a.archive-title {
   word-wrap: normal !important;
 }*/
 
-/*li.socmed-icons {
-	background-image: url('../img/twitter-2-icon.png');
-	background-repeat: no-repeat;
-	background-position: left;
-	padding-left: 1/3rem;
-}*/
 
