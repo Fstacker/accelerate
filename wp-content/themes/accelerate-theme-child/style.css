@@ -93,15 +93,18 @@ Text Domain:  accelerate-theme-child
 	margin: 1rem 0;
 }
 
-.featured-work ul {
-	list-style: none;
-	display: flex;
+ul.featured-work {
+	/*list-style: none;*/
+	display: inline-flex;
 	justify-content: space-between;
 	margin: 0;
 }
 
-.featured-work li {
-	float: left;
+li.featured-work {
+	display: inline-flex;
+	justify-content: space-between;
+	align-content: center;
+	margin: auto 0;
 }
 
 /* ===== SINGLE CASE STUDY ======  */
@@ -219,4 +222,27 @@ img._mi._image {
   word-wrap: normal !important;
 }*/
 
+/* ===== CONTACT US PAGE  ===== */
 
+
+.nf-form-fields-required,
+.ninja-forms-req-symbol {
+	display: none;
+}
+
+input[type="button"] .ninja-forms-field.nf-element {
+background: none repeat scroll 0 0 #45ac9d;
+}
+
+.nf-form-content button,
+.nf-form-content input[type="button"],
+.nf-form-content input[type="submit"] {
+	background: none repeat scroll 0 0 #45ac9d;
+	border: none;
+	color: #fff;
+}
+
+.nf-form-layout {
+	display: flex;
+	flex-flow: row nowrap;
+}
