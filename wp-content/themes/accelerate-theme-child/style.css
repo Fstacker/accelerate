@@ -14,7 +14,7 @@ Text Domain:  accelerate-theme-child
 
 .page-header, .site-content, #navigation, .site-footer {
 	width: 95%;
-	max-width: 1280px;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 
@@ -225,24 +225,130 @@ img._mi._image {
 /* ===== CONTACT US PAGE  ===== */
 
 
+.contact {
+	max-width: 700px;
+}
+
+.contact h2 {
+	font-size: 2rem;
+	color: #2b2b2b;
+	margin: 0;
+}
+
+.contact p {
+	color: #3b3b3b;
+	padding-bottom: 2rem;
+	margin: 0;
+}
+
+.textbox-wrap,
+.email-wrap {
+	/*max-width: 325px; */
+}
+
+.nf-form-content {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+nf-fields-wrap {
+	display: flex;
+	flex-direction: column; 
+}
+
+.wrapper {
+	
+}
+
 .nf-form-fields-required,
 .ninja-forms-req-symbol {
 	display: none;
 }
 
-input[type="button"] .ninja-forms-field.nf-element {
-background: none repeat scroll 0 0 #45ac9d;
+.nf-field {
+	padding: .5rem 0;
 }
 
-.nf-form-content button,
-.nf-form-content input[type="button"],
-.nf-form-content input[type="submit"] {
-	background: none repeat scroll 0 0 #45ac9d;
-	border: none;
-	color: #fff;
-}
-
-.nf-form-layout {
+#nf-field-4 {
 	display: flex;
-	flex-flow: row nowrap;
+	justify-content: flex-end;
+	margin: 0;
+	background: #45ac9d;
+	padding: 1rem 3.75rem;
 }
+
+.nf-element {
+	background: #fff;
+	border: 1px solid #bfbfbf;
+}
+
+.nf-form-content textarea {
+	background: #fff;
+}
+
+/* ===== ABOUT SERVICES PAGE  ===== */
+
+.archive-service-container {
+	display: flex;
+	/*flex-wrap: wrap; */
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 0;
+} 
+
+.archive-service-container:nth-child(odd) {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.service-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.service-text {
+	width: 65%;
+	margin: 2em 0 2em;
+	margin: auto;
+	align-items: center;
+}
+
+.service-image {
+	width: 30%;
+	margin: 2em 0 2em;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.service-text h2 {
+	font: 700 1.35rem/1.5 'Open Sans', sans-serif;
+	color: #3b3b3b;
+	margin: 0;
+	
+	padding-bottom: .75rem;
+}
+.service-text p {
+	
+	margin: 0;
+}
+
+/* ===== ABOUT PAGE  ===== */
+
+.services-header {
+	display: flex;
+	flex-flow: row wrap;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.services-header h1 {
+	font: 700 .85rem/1.5 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	color: #3b3b3b;
+	margin: 2em auto;
+	align-items: center;
+}
+

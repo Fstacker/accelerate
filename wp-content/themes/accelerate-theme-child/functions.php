@@ -35,6 +35,27 @@ function create_custom_post_types() {
 				),
 			)
 		);
-}
+	}
 //	Hook this custom post type function into the theme
 add_action( 'init', 'create_custom_post_types' );
+
+
+//  Function for services described in the About page
+function create_custom_post_services() {
+	// create a services offered custom post type
+	register_post_type('services',
+		array(
+			'labels'	=> array(
+				'name'	=> __( 'Services' ),
+				'singular_name'	=> __( 'Service' )
+				),
+			'public'	=> true,
+			'has_archive'	=> false,
+			'rewrite'	=> array(
+				'slug'	=> 'services'
+			),
+		)
+	);
+}
+//  hook function into the theme
+add_action( 'init', 'create_custom_post_services');
