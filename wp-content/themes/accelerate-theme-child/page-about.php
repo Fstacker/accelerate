@@ -23,26 +23,7 @@ get_header(); ?>
 					</header> <!-- .services-header -->
 			<?php endwhile; // end of the loop. ?>
 
-			<!-- query to pull individual services from ACF -->
-			<?php query_post('posts_per_page=4&post_type=services'); ?>
-				<?php while ( have_posts()) : the_post();
-					$service = get_field( 'service');
-					$image = get_field( 'image' );
-					$size = "full"
-				?>	
-
-					<section class="services-container">
-						<article class="service-acf">
-							<h2><?php the_title(); ?></h2>
-							<p><?php the_content(); ?></p>
-						</article>
-
-						<figure class="service-image">
-							<?php echo wp_get_attachment_image($image, $size); ?>
-						</figure>
-					</section> <!-- services-container -->
-				<?php endwhile; // end of acf query loop ?>
-			<?php wp_reset_query(); ?>
+			
 				
 		</div><!-- .main-content -->
 
