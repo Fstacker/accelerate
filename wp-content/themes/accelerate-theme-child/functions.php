@@ -43,10 +43,10 @@ add_action( 'init', 'create_custom_post_types' );
 //  Function for services described in the About page
 function create_custom_post_services() {
 	// create a services offered custom post type
-	register_post_type('services',
+	register_post_type('services_offered',
 		array(
 			'labels'	=> array(
-				'name'	=> __( 'Services' ),
+				'name'	=> __( 'Services Offered' ),
 				'singular_name'	=> __( 'Service' )
 				),
 			'public'	=> true,

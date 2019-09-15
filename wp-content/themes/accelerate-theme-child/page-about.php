@@ -23,7 +23,6 @@ get_header(); ?>
 					</header> <!-- .services-header -->
 			<?php endwhile; // end of the loop. ?>
 
-			
 				
 		</div><!-- .main-content -->
 
