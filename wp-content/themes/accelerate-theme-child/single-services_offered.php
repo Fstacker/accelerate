@@ -1,6 +1,6 @@
 <?php
 /**
- * Template name:  Services
+ * The template for displaying a single service offered
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -16,23 +16,24 @@ get_header(); ?>
 
 	<div id="primary" class="site-content">
 		<div class="main-content" role="main">
+			<?php while ( have_posts() ) : the_post();
+				$service_description = get_field('service_description');
+				$service_image = get_field('service_image');
+				$size = "full"
+			?>
+				
 			<section class="service-container">
-				<?php while ( have_posts() ) : the_post(); 
-					$service = get_field('service');
-					$image = get_field('image');
-					$size = 'full';
-				?>
-
-				<article class="service-text">
+				<section class="service-text">
 					<h2><?php the_title(); ?></h2>
-					<?php the_content(); ?>
-				</article>
+					<?php echo $service_description; ?>
+				</section> <!-- .service-text -->
 
 				<figure class="service-image">
-					<?php echo wp_get_attachment_image( $image, $size ); ?>
-				</figure>
-				<?php endwhile; // end of the loop. ?>
-			</section> <!-- .service-container -->
+					<?php echo wp_get_attachment_image($service_image, $size); ?>
+				</figure> <!-- .service-image -->
+			</section>	<!-- .service-container -->
+					
+			<?php endwhile; // end of the loop. ?>
 		</div><!-- .main-content -->
 
 	</div><!-- #primary -->

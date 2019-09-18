@@ -15,18 +15,22 @@
 get_header(); ?>
 
 	<div id="primary" class="site-content">
-		<div class="main-content" role="main">
+		<div class="main-content services" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
-					<header class="services-header">
-						<h1><?php the_title(); ?></h1>
-						<?php the_content(); ?>
-					</header> <!-- .services-header -->
+				<header class="services-header">	
+					<h1><?php the_title(); ?></h1>
+					<?php the_content(); ?>
+				</header> <!-- .services-header -->
 			<?php endwhile; // end of the loop. ?>
 
-				
-		</div><!-- .main-content -->
+		</div><!-- .main-content .services-->
 
-
+		<section class="services-contact">
+			<h3>Interest in working with us?</h3>
+			<a class="button" href="#">Contact Us</a>
+		</section>
 	</div><!-- #primary -->
 
-<?php get_footer(); ?>
+<div class="services">
+	<?php get_footer(); ?>
+</div>

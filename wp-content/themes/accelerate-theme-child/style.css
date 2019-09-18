@@ -288,73 +288,78 @@ nf-fields-wrap {
 	background: #fff;
 }
 
-/* ===== ABOUT SERVICES PAGE  ===== */
 
-/*.archive-service-container {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	margin: 0;
-} 
+/* ===== OUR SERVICES / ABOUT PAGE  ===== */
 
-.archive-service-container:nth-child(odd) {
+.services-header {
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: column;
+	width: 700px;
+	margin: 0 auto;
+	padding-bottom: 3em;
 }
+
+.services-header h1 {
+	font: 700 1em/1 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	margin: 3em auto 2em;
+}
+
+.services-header p {
+	line-height: 1.75;
+	margin: 0 auto;
+}
+
 
 .service-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin: 2em auto;
 }
 
 .service-text {
+	float: left;
 	width: 65%;
-	margin: 2em 0 2em;
-	margin: auto;
-	align-items: center;
-}
-
-.service-image {
-	width: 30%;
-	margin: 2em 0 2em;
-	display: flex;
-	justify-content: flex-end;
 }
 
 .service-text h2 {
 	font: 700 1.35rem/1.5 'Open Sans', sans-serif;
-	color: #3b3b3b;
-	margin: 0;
-	
-	padding-bottom: .75rem;
-}
-.service-text p {
-	
-	margin: 0;
-}*/
-
-/* ===== ABOUT PAGE  ===== */
-
-.services-header {
-	display: flex;
-	flex-flow: row wrap;
-	width: 60%;
-	margin: 0 auto;
-}
-
-.services-header h1 {
-	font: 700 .85rem/1.5 'Open Sans', sans-serif;
-	letter-spacing: 1px;
-	text-transform: uppercase;
 	color: #444;
-	margin: 3em auto 1.5em;
-	align-items: center;
+	margin: 0 0 1rem;
 }
 
-.services-header p {
+.service-text p {
 	font: 400 .9rem/1.5 'Open Sans', sans-serif;
 	margin: 0 auto;
 	color: #666;
 }
 
+.service-image {
+	width: 30%;
+	display: flex;
+	justify-content: flex-end;
+
+}
+
+.services-contact {
+	width: 1000px;
+	padding: 3.5em 8em;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-top: 1px solid #bfbfbf;
+}
+
+.services-contact h3 {
+	font: 700 1.25rem/1.5 'Open Sans', sans-serif;
+	color: #444;
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+
+.services-contact a {
+
+}
